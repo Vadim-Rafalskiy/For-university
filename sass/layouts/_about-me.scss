@@ -1,0 +1,108 @@
+.about-me-wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.about-me {
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 450px;
+  }
+}
+
+.about-me__img {
+  @media screen and (max-width: 1199px) {
+    border-top-right-radius: 10px;
+    width: 300px;
+  }
+  @media screen and (max-width: 767px) {
+    border-top-right-radius: 10px;
+    width: 450px;
+  }
+  border-top-left-radius: 10px;
+}
+
+.about-me__info {
+  //   padding-top: 30px;
+  //   padding-bottom: 30px;
+  padding: 20px 5px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 35px 5px;
+  }
+}
+
+.about-me__title {
+  margin-bottom: 10px;
+  text-align: center;
+
+  @include font(16px, 500, 19px);
+  letter-spacing: var(--letter-spacing-priority);
+
+  color: var(--font-color-secondary);
+}
+
+.about-me__text {
+  margin-bottom: 16px;
+  text-align: center;
+
+  @include font(16px, false, 19px);
+  letter-spacing: var(--letter-spacing-priority);
+}
+
+.technologies {
+  padding-top: 20px;
+  @include font(16px, false, 19px);
+  letter-spacing: var(--letter-spacing-priority);
+}
+
+.technologies__title {
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  @include font(24px, false, 28px);
+  text-align: center;
+  color: var(--font-color-secondary);
+}
+
+.technologies__list {
+  @media screen and (min-width: 1200px) {
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  display: flex;
+  gap: 30px;
+}
+
+.technologies__item {
+  @media screen and (min-width: 1200px) {
+    width: 250px;
+  }
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    width: 150px;
+  }
+}

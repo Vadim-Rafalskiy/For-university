@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!--======================================== HEADER ========================================-->
+
+    <header class="page-header">
+      <!--=================================== NAVIGATION ===================================-->
+
+      <div class="container container__page-header">
+        <nav class="page-nav">
+          <a class="logo logo__page-header" href="/"
+            >Web<span class="logo__header-color">Studio</span></a
+          >
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html"> Студія </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html" target="_self"> Портфоліо </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./contacts.html" target="_self"> Контакти </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link_current" href="/review.html" target="_self">
+                Відгуки
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="/about_me.html" target="_self">
+                Про мене
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open-icon" height="40" width="40">
+            <use href="./images/icon.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+
+        <ul class="contact">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" height="12" width="16">
+                <use href="./images/icon.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__icon" height="16" width="10">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--========================== MOBILE MENU ==========================-->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icon.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-nav">
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link mobile-menu-nav__link" href="./index.html">
+                Студія
+              </a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="./portfolio.html" target="_self">
+                Портфоліо
+              </a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="./contacts.html"> Контакти </a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a
+                class="mobile-menu-nav__link mobile-menu-nav__link_current"
+                href="./review.html"
+                target="_self"
+                >Відгуки</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link" href="./about_me.html" target="_self">Про мене</a>
+              </li>
+  
+          </ul>
+
+          <div class="address-thumb">
+            <ul class="mobile-menu-address">
+              <li class="mobile-menu-address__item">
+                <a
+                  class="mobile-menu-address__link mobile-menu-address__link_tel"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-menu-address__item">
+                <a
+                  class="mobile-menu-address__link mobile-menu-address__link_email"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-social">
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link"> Instagram </a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link"> Twitter </a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link"> Facebook </a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        <!-- ======================================= Reviews ======================================= -->
+        <h2 class="section-title section-title_margin-b">Клієнти про нас</h2>
+        <!-- 00000 -->
+        <div class="reviewItem__wrapper">
+          <div class="reviewItem__inner">
+            <div class="reviewItem__top">
+              <div class="reviewItem__logo">
+                <img
+                  class="client-list__icon"
+                  src="./images/Reviews_logo/yakaboo.png"
+                  alt="yakaboo"
+                />
+              </div>
+              <div class="reviewItem__info">
+                <a
+                  class="reviewItem__name"
+                  href="https://yakaboo.ua"
+                  rel="noreferrer noopener nofollow"
+                  target="_blank"
+                  >Національна книжкова платформа</a
+                >
+                <div class="reviewItem__theme">Книги, канцтовари та дитячі товари</div>
+                <div class="reviewItem__service">SEO, PPC</div>
+              </div>
+            </div>
+            <div class="reviewItem__tabs">
+              <div class="reviewItem__tab-labels">
+                <div class="reviewItem__tab active" >
+                  <span>Текстовий відгук</span>
+                </div>
+              </div>
+
+              <div class="reviewItem__tab-contents">
+                <div class="reviewItem__tab-content tab-1 active">
+                  <div class="reviewItem__text-review">
+                    <div class="reviewItem__text-review-author">Гансюк І.Г.</div>
+                    <div class="reviewItem__text-review-position">Керівник ТОВ «Якабун»</div>
+                    <div class="reviewItem__text-review-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt quis qui quibusdam, officiis architecto enim, debitis aliquam possimus dolor fugit perspiciatis vel expedita laborum quae inventore minima, iste sint.
+                        Nulla eveniet omnis maxime voluptas optio, saepe molestiae voluptate magni in harum reiciendis eaque maiores libero expedita quidem officia. Et veniam dolor voluptate earum iusto. Animi velit ipsum fugiat doloremque.
+                        Dolor totam soluta nisi iusto eligendi molestiae asperiores, atque, molestias rem, consectetur ullam laborum repudiandae assumenda quos vero exercitationem ipsam? Assumenda, doloribus. Molestias tempora perspiciatis ducimus, quas at expedita veritatis!
+                        Iste, sapiente sit neque dolor culpa reiciendis, cumque eligendi atque nihil fugiat repudiandae animi, perferendis laborum ipsa doloremque recusandae autem nobis officiis placeat sint adipisci corrupti. Praesentium et doloremque illum.
+                        Alias dolorum omnis ut? Dignissimos blanditiis asperiores minus similique corporis reprehenderit ipsum ducimus soluta vitae quibusdam facere dicta voluptates quam, repellendus error repellat eius illo aut omnis corrupti, id incidunt?
+                        Autem minima consectetur veritatis repudiandae, itaque magnam! Magni repudiandae in dignissimos itaque fugit blanditiis! Vitae ipsam commodi nisi nesciunt amet labore animi iure doloremque. Non fugit eum voluptates eos dicta.
+                        Distinctio sunt veniam cupiditate similique dignissimos delectus quae nobis quod libero quos, velit, repudiandae id officiis molestiae eveniet saepe aliquid laborum molestias quisquam at illo sit quasi? Mollitia, dolores perspiciatis!
+                        Illo sunt libero deleniti quos dicta praesentium alias eos, architecto non animi consequatur fuga culpa earum ea et, modi voluptatum. Alias laboriosam adipisci ea rerum quas nihil dignissimos enim animi.
+                        Quas nam aliquam voluptatum non, labore autem magnam deleniti nisi animi ab eum vitae inventore! Fugiat, consectetur soluta dolor, cum voluptatem nostrum recusandae enim numquam quos, sed quo rerum nesciunt!
+                        Porro illo similique dicta veniam accusantium omnis, eligendi natus consequuntur. Suscipit ad totam voluptas natus nulla, aspernatur corrupti ut voluptatibus illo tenetur rerum, incidunt hic dolorum dignissimos, accusamus magnam fugit.
+                      </p>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /00000 -->
+          <!-- 00001 -->
+          <div class="reviewItem__inner">
+            <div class="reviewItem__top">
+              <div class="reviewItem__logo">
+                <img class="client-list__icon" src="./images/Reviews_logo/Kodi.png" alt="yakaboo" />
+              </div>
+              <div class="reviewItem__info">
+                <a
+                  class="reviewItem__name"
+                  href="https://kodi-professional.ua/"
+                  rel="noreferrer noopener nofollow"
+                  target="_blank"
+                >
+                  Kodi Professional
+                </a>
+                <div class="reviewItem__theme">Косметика для салону та дому.</div>
+                <div class="reviewItem__service">PPC</div>
+              </div>
+            </div>
+            <div class="reviewItem__tabs">
+              <div class="reviewItem__tab-labels">
+                <div class="reviewItem__tab active" >
+                  <span>Текстовий відгук</span>
+                </div>
+              </div>
+
+              <div class="reviewItem__tab-contents">
+                <div class="reviewItem__tab-content tab-1 active">
+                  <div class="reviewItem__text-review">
+                    <div class="reviewItem__text-review-author">Хаджин Корі</div>
+                    <div class="reviewItem__text-review-position">Head of Marketing & PR</div>
+                    <div class="reviewItem__text-review-text">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae iure reiciendis ex, ipsam deleniti quibusdam, veniam consectetur cumque error modi perspiciatis, nobis ab natus exercitationem quia reprehenderit alias commodi ipsa.
+                        Neque, qui harum rerum suscipit dolor quis architecto, exercitationem hic illum similique deleniti repellat fuga sunt iusto quod libero saepe fugiat officiis earum obcaecati labore eius repudiandae assumenda quibusdam! Laudantium.
+                        Sunt optio cumque itaque impedit cupiditate neque numquam deserunt libero quis molestias id ea, vel harum, necessitatibus dolore sint pariatur dicta tenetur sequi veniam vero consequatur esse! Facere, assumenda sequi!
+                        Corporis, pariatur reiciendis sed eligendi expedita maiores laborum cumque perspiciatis nesciunt aliquam aut dolor! Atque numquam facere animi distinctio, qui eius ipsa rem, perspiciatis inventore eligendi ducimus repudiandae suscipit dignissimos.
+                        Eligendi repudiandae praesentium provident perferendis omnis deserunt distinctio neque officia nostrum nemo error voluptatibus dolorum doloremque, voluptate natus. Praesentium neque eum fugiat tempora obcaecati quos illum illo accusamus nemo magnam!
+                        Modi magnam eaque commodi consequuntur esse aspernatur ea exercitationem neque unde, est sed asperiores quo vitae beatae repellat illum doloribus veniam mollitia incidunt maiores, et obcaecati deleniti. Ipsa, numquam a.
+                        Nesciunt rem numquam repellat veritatis quasi. Accusantium ducimus, molestias facere eos modi sed impedit suscipit exercitationem ipsam, adipisci rerum voluptatem, aliquam hic similique quaerat earum maiores cupiditate harum. Rerum, perferendis?
+                        Reiciendis rerum aperiam fuga aut? Aperiam, quidem officiis atque maxime, minus neque tenetur quasi inventore corporis fugiat fugit distinctio ab rem voluptate qui cum ipsa? Eveniet officia aperiam ab quas.
+                        Error voluptatum, nesciunt quos, ex similique odio adipisci saepe consequatur natus minima ad voluptates placeat qui facilis tenetur rem repellat tempora. Temporibus cum praesentium modi quo, quaerat illo deleniti dignissimos!
+                        Quod animi tenetur voluptates voluptate corporis at, et perspiciatis exercitationem, fugiat qui nesciunt molestiae officia dolorum aliquid ipsum, quam ea doloribus nemo consectetur amet sapiente soluta eius quia libero. Voluptas.
+                      </p>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- /00001 -->
+            <!-- 00002 -->
+                    <div class="reviewItem__inner">
+              <div class="reviewItem__top">
+                <div class="reviewItem__logo">
+                  <img
+                    class="client-list__icon"
+                    src="./images/Reviews_logo/AcademyOcean.png"
+                    alt="yakaboo"
+                  />
+                </div>
+                <div class="reviewItem__info">
+                  <a
+                    class="reviewItem__name"
+                    href="https://academyocean.com/"
+                    rel="noreferrer noopener nofollow"
+                    target="_blank"
+                    >
+                    Academy Ocean
+                    </a>
+                  <div class="reviewItem__theme">Платформа онбордингу та навчання</div>
+                  <div class="reviewItem__service">SEO</div>
+                </div>
+              </div>
+              <div class="reviewItem__tabs">
+                <div class="reviewItem__tab-labels">
+                  <div class="reviewItem__tab active" >
+                    <span>Текстовий відгук</span>
+                  </div>
+                </div>
+  
+                <div class="reviewItem__tab-contents">
+                  <div class="reviewItem__tab-content tab-1 active">
+                    <div class="reviewItem__text-review">
+                      <div class="reviewItem__text-review-author">Henry Dach</div>
+                      <div class="reviewItem__text-review-position">Chief Marketing Officer</div>
+                      <div class="reviewItem__text-review-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, pariatur ex officia voluptatem nihil quibusdam quas iste suscipit consequatur, excepturi iure obcaecati, qui odit cupiditate sit laboriosam sequi nulla similique?
+                          Maiores eveniet nulla quae cupiditate delectus laboriosam non doloribus distinctio dolores est, magni aliquam voluptatum minus dolore consectetur at repudiandae consequatur, temporibus quod incidunt laudantium voluptatibus? Expedita inventore eligendi obcaecati?
+                          At alias officia soluta. Ad laborum provident facere enim possimus eius quis accusantium est architecto aperiam! Alias, omnis dolore enim odit perspiciatis quia ducimus voluptatem neque asperiores, iste tempore porro.
+                          Veniam, voluptatum aut! Labore odit sit doloremque assumenda pariatur natus, perspiciatis deserunt voluptatem, numquam deleniti vitae aut inventore optio doloribus. Quod iure dignissimos praesentium vel qui vitae odio! Dolorum, harum!
+                          Cupiditate, dolorum. Minus consectetur illo, nam similique, itaque enim obcaecati id incidunt ut odit dolorem nesciunt modi repellendus? Sit error quisquam praesentium accusantium maiores. Possimus veniam voluptates deserunt esse nobis.
+                          Impedit suscipit consectetur quam optio. Nisi vel ea doloremque voluptatum laudantium quisquam perspiciatis quam facere tenetur! Inventore earum eos quod nobis obcaecati. Quam fugit nulla voluptatibus, vero ipsa debitis. Et?
+                          Illo, hic esse ea repellendus officiis assumenda voluptatum ad magnam sit cumque. Necessitatibus, praesentium. Officia illum saepe aliquam alias, quis eligendi, totam ex, maiores tempora sed explicabo repudiandae impedit atque?
+                          Placeat nisi magni atque libero nam explicabo dolores aliquid ratione odit? Enim quod perferendis earum? Officia, dolore! Cum minima ea sequi laboriosam perspiciatis assumenda quasi consequatur fugit, similique, aut nisi.
+                          Reiciendis dolor laudantium quisquam recusandae sit animi dolorem voluptatem facere consequuntur nobis asperiores at quibusdam odit molestias quasi atque doloribus, sapiente nisi. Voluptate, illo. Debitis suscipit earum blanditiis illo fugiat.
+                          Asperiores unde praesentium repudiandae accusantium tempore quisquam perspiciatis ipsum in ab odit, commodi molestiae aliquid ea mollitia voluptatem facilis fugit tenetur consequuntur animi soluta. Dicta eum repudiandae eligendi dolorum assumenda.
+                        </p>
+                        <p>&nbsp;</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /00002 -->
+            <!-- 00003 -->
+            <div class="reviewItem__inner">
+              <div class="reviewItem__top">
+                <div class="reviewItem__logo">
+                  <img
+                    class="client-list__icon"
+                    src="./images/Reviews_logo/ExpertsMedical.png"
+                    alt="yakaboo"
+                  />
+                </div>
+                <div class="reviewItem__info">
+                  <a
+                    class="reviewItem__name"
+                    href="https://academyocean.com/"
+                    rel="noreferrer noopener nofollow"
+                    target="_blank"
+                    >
+                    Experts Medical
+                    </a>
+                  <div class="reviewItem__theme">Організація лікування за кордоном</div>
+                  <div class="reviewItem__service">SEO</div>
+                </div>
+              </div>
+              <div class="reviewItem__tabs">
+                <div class="reviewItem__tab-labels">
+                  <div class="reviewItem__tab active" >
+                    <span>Текстовий відгук</span>
+                  </div>
+                </div>
+  
+                <div class="reviewItem__tab-contents">
+                  <div class="reviewItem__tab-content tab-1 active">
+                    <div class="reviewItem__text-review">
+                      <div class="reviewItem__text-review-author">Вікторія Ташкевич</div>
+                      <div class="reviewItem__text-review-position">Керівник Experts Medical</div>
+                      <div class="reviewItem__text-review-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, pariatur ex officia voluptatem nihil quibusdam quas iste suscipit consequatur, excepturi iure obcaecati, qui odit cupiditate sit laboriosam sequi nulla similique?
+                          Maiores eveniet nulla quae cupiditate delectus laboriosam non doloribus distinctio dolores est, magni aliquam voluptatum minus dolore consectetur at repudiandae consequatur, temporibus quod incidunt laudantium voluptatibus? Expedita inventore eligendi obcaecati?
+                          At alias officia soluta. Ad laborum provident facere enim possimus eius quis accusantium est architecto aperiam! Alias, omnis dolore enim odit perspiciatis quia ducimus voluptatem neque asperiores, iste tempore porro.
+                          Veniam, voluptatum aut! Labore odit sit doloremque assumenda pariatur natus, perspiciatis deserunt voluptatem, numquam deleniti vitae aut inventore optio doloribus. Quod iure dignissimos praesentium vel qui vitae odio! Dolorum, harum!
+                          Cupiditate, dolorum. Minus consectetur illo, nam similique, itaque enim obcaecati id incidunt ut odit dolorem nesciunt modi repellendus? Sit error quisquam praesentium accusantium maiores. Possimus veniam voluptates deserunt esse nobis.
+                          Impedit suscipit consectetur quam optio. Nisi vel ea doloremque voluptatum laudantium quisquam perspiciatis quam facere tenetur! Inventore earum eos quod nobis obcaecati. Quam fugit nulla voluptatibus, vero ipsa debitis. Et?
+                          Illo, hic esse ea repellendus officiis assumenda voluptatum ad magnam sit cumque. Necessitatibus, praesentium. Officia illum saepe aliquam alias, quis eligendi, totam ex, maiores tempora sed explicabo repudiandae impedit atque?
+                          Placeat nisi magni atque libero nam explicabo dolores aliquid ratione odit? Enim quod perferendis earum? Officia, dolore! Cum minima ea sequi laboriosam perspiciatis assumenda quasi consequatur fugit, similique, aut nisi.
+                          Reiciendis dolor laudantium quisquam recusandae sit animi dolorem voluptatem facere consequuntur nobis asperiores at quibusdam odit molestias quasi atque doloribus, sapiente nisi. Voluptate, illo. Debitis suscipit earum blanditiis illo fugiat.
+                          Asperiores unde praesentium repudiandae accusantium tempore quisquam perspiciatis ipsum in ab odit, commodi molestiae aliquid ea mollitia voluptatem facilis fugit tenetur consequuntur animi soluta. Dicta eum repudiandae eligendi dolorum assumenda.
+                        </p>
+                        <p>&nbsp;</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /00003 -->
+        </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container footer">
+        <div class="footer-thumb">
+          <div class="address-container">
+            <a class="logo logo__footer" href="/"
+              >Web<span class="logo__footer-color">Studio</span></a
+            >
+            <address>
+              <ul class="address-list">
+                <li class="address-list__item">
+                  <a
+                    class="address-list__link address-list__link_color"
+                    href="https://goo.gl/maps/aTcCXjE4qX92qrxGA"
+                    >м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="address-list__item">
+                  <a class="address-list__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-list__item">
+                  <a class="address-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <p class="footer-social__text">приєднуйтесь</p>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_footer-bg-color">
+                  <svg class="social-list__icon" width="20" height="20">
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_footer-bg-color">
+                  <svg class="social-list__icon" width="20" height="20">
+                    <use href="./images/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_footer-bg-color">
+                  <svg class="social-list__icon" width="20" height="20">
+                    <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a href="" class="social-list__link social-list__link_footer-bg-color">
+                  <svg class="social-list__icon" width="20" height="20">
+                    <use href="./images/icon.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- =================================== subscribe-form =================================== -->
+
+        <form class="subscribe-form" autocomplete="off">
+          <label class="subscribe-form__desc" for="subscribe">Підпишіться на розсилку</label>
+          <span class="subscribe-fild">
+            <input
+              class="subscribe-form__input"
+              type="email"
+              name="email-subscribe"
+              id="subscribe"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-form__btn button" type="submit">Підписатися</button>
+          </span>
+        </form>
+      </div>
+    </footer>
+    <div class="proofWrapper">
+      <div class="proof">
+        <p>Рафальський Вадим Петрович</p>
+        <p>15Мд-СОінф</p>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
