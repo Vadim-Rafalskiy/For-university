@@ -1619,7 +1619,6 @@ a.reviewItem__name:hover::after {
 }
 @media screen and (max-width: 1199px) {
   .about-me__img {
-    border-top-right-radius: 10px;
     width: 300px;
   }
 }
