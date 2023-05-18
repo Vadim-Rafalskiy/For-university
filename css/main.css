@@ -1035,6 +1035,12 @@ p {
   }
 }
 
+.copy {
+  color: white;
+  position: relative;
+  top: -10px;
+}
+
 @media screen and (max-width: 767px) {
   .address-container {
     margin-bottom: 60px;
